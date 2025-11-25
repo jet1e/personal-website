@@ -3,52 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Evelyn Reed - Arcadian Scholar Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <title>Jet Le Portfolio</title>
+    <link rel="stylesheet" href="style.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- HEADING -->
-    <header class="profile-header">
-    <div class="profile-info-group">
-        <img src="assets/images/CJHL3512.jpg" alt="Image of Jet Le" class="profile-image" height="80">
-        <div>
-            <h1>
+    <div class="card-container">
+        <!-- HEADING -->
+        <header class="profile-header">
+        <div class="profile-info-group">
+            <img src="https://drive.google.com/uc?export=view&id=1HfWiKqi28k7CSClklzXEVEAYz_Q__gga" alt="Image of Jet Le" class="profile-image" height="80">
+            <div>
                 <h1 class="profile-name">Jet Le</h1>
-                <p class="profile-title">Research & Software Engineer</p>
-            </h1>
+                <p class="profile-title">Research & Software Engineer todo</p>
+            </div>
         </div>
 
         <!-- TO-DO -->
-        <div class="metrics-summary">
-            <div class="metric-box border-separator">
-                <p class="metric-value">42</p>
-                <p class="metric-label">Publications</p>
+            <div class="social-media-summary">
+                <div class="social-media-box border-separator">
+                    <a href="#" class="social-media-icon">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <p class="social-media-label">GitHub</p>
+                </div>
+                <div class="social-media-box">
+                    <a href="#" class="social-media-icon">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <p class="social-media-label">LinkedIn</p>
+                </div>
             </div>
-            <div class="metric-box">
-                <p class="metric-value">1,450+</p>
-                <p class="metric-label">Citations</p>
-            </div>
-        </div>
+        </header>
+
+        <nav class="tabs-nav">
+            <button data-section="about" class="tab-button active">About</button>
+            <button data-section="experience" class="tab-button">Experience</button>
+            <button data-section="projects" class="tab-button">Projects</button>
+            <button data-section="contact" class="tab-button">Contact</button>
+        </nav>
+
+        <main class="scrollable-content">
+            <section id="about" class="portfolio-section">
+                <h3 class="section-title">Hi, <span class="wave">👋</span> Jet here.</h3>
+                <p class="section-text">I am a final-year Honours Comp-Sci student in Perth, Australia. I am fascinated by large-scale, high impact products and research and have many industry and research related experiences.</p>
+            </section>
+
+
+        </main>
     </div>
-    </header>
-
-    <nav class="tabs-nav">
-        <button data-section="about" class="tab-button active">About</button>
-        <button data-section="experience" class="tab-button">Experience</button>
-        <button data-section="projects" class="tab-button">Projects</button>
-        <button data-section="contact" class="tab-button">Contact</button>
-    </nav>
-
-    <main class="scrollable-content">
-        <section id="about" class="portfolio-section">
-            <h3 class="section-title">Hi, <span class="wave">👋</span> Jet here.</h3>
-            <p class="section-text">I am a final-year Honours Comp-Sci student in Perth, Australia. I am fascinated by large-scale, high impact products and research and have many industry and research related experiences.</p>
-        </section>
-
-
-    </main>
-
     <script src="script.js" defer></script> 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
