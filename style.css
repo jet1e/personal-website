@@ -2,7 +2,7 @@
 :root {
     --arcadian-bg: #F7F7F7;        /* Lighter background */
     --arcadian-dark: #1C2833;      /* Near Black Text/Primary Dark */
-    --arcadian-primary: #4FBDBA;   /* New Aesthetic Light Green/Teal */
+    --arcadian-primary: #4FBDBA;
     --arcadian-secondary: #6C7A89; /* Muted Gray */
     --arcadian-border: #E0E7FF;    /* Very light blue border/separator */
     --font-stack: 'Poppins', sans-serif;
@@ -35,6 +35,13 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+a.inline-link {
+    color: var(--arcadian-link);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+} 
+/* TODO */
 
 .primary-text {
     color: var(--arcadian-primary);
@@ -171,4 +178,129 @@ a:hover {
     color: var(--arcadian-dark);
     border-bottom-color: var(--arcadian-primary);
 }
+
+/* SCROLL BAR STYLING */
+.scrollable-content {
+    max-height: 70vh; /* max-height: 70vh */
+    overflow-y: auto;
+    padding-right: 0.5rem; /* Add some padding to avoid content touching scrollbar */
+}
+
+/* Custom Scrollbar Styling (Webkit only) */
+.scrollable-content::-webkit-scrollbar {
+    width: 6px;
+}
+.scrollable-content::-webkit-scrollbar-thumb {
+    background: #B2DFDB; /* Light teal/cyan */
+    border-radius: 10px;
+}
+.scrollable-content::-webkit-scrollbar-track {
+    background: var(--arcadian-border);
+}
+
+/* ------------- */
+/* MAIN SECTIONS */
+/* ------------- */
+
+.portfolio-section {
+    padding-bottom: 1rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--arcadian-dark);
+    margin-bottom: 1rem;
+}
+
+.sub-title {
+    margin-top: 2rem; 
+}
+
+/* ABOUT SECTION */
+.section-text {
+    color: var(--arcadian-secondary);
+    line-height: 1.6; 
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--arcadian-primary);
+    padding-left: 1rem;
+}
+
+.edu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .edu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.edu-card {
+    padding: 1rem;
+    background-color: var(--arcadian-bg);
+    border-radius: 0.5rem;
+}
+
+.edu-place {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--arcadian-secondary);
+}
+
+.edu-title {
+    font-size: 1.125rem; 
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.edu-about {
+    font-size: 0.875rem; /* text-lg */
+    font-weight: 100;
+    color: var(--arcadian-dark);
+}
+
+/* EXPERIENCE SECTION */
+.experience-list {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.experience-item {
+    padding: 1rem;
+    border: 1px solid var(--arcadian-border);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.2s ease;
+}
+
+.experience-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.job-company {
+    color: var(--arcadian-primary);
+}
+
+.job-title {
+    font-size: 1.125rem; 
+    font-weight: 700;
+    color: var(--arcadian-dark);
+}
+
+.job-date {
+    font-size: 0.875rem;
+    color: var(--arcadian-secondary);
+    font-style: italic;
+    margin-top: 0.25rem;
+}
+
+.job-desc {
+    font-size: 0.75rem;
+    color: var(--arcadian-secondary);
+    margin-top: 0.5rem;
+}
+
 /* ALT SCREEN SIZE COMPATABILITY*/
