@@ -303,4 +303,70 @@ a.inline-link {
     margin-top: 0.5rem;
 }
 
+/* PROJECTS SECTION */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 1024px) { 
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.projects-card {
+    background-color: var(--arcadian-bg);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    
+    border: 1px solid var(--arcadian-border);
+    transition: box-shadow 0.2s ease;
+}
+
+.projects-card:hover {
+    box-shadow: 0 5px 11px rgba(0, 0, 0, 0.05);
+}
+
+.project-folder-icon {
+    font-size: 1.5rem;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--arcadian-dark);
+}
+
+.project-desc {
+    font-size: 0.875rem;
+    color: var(--arcadian-secondary);
+    margin-top: 0.25rem;
+}
+
+.project-footer {
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px; 
+}
+
+.project-tag.primary-bg {
+    background-color: var(--arcadian-dark);
+    color: white;
+}
+
+.project-link:hover {
+    text-decoration: none;
+    color: var(--arcadian-dark);
+    transition: color 0.2s ease;
+}
 /* ALT SCREEN SIZE COMPATABILITY*/
