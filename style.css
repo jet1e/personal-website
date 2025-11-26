@@ -369,4 +369,24 @@ a.inline-link {
     color: var(--arcadian-dark);
     transition: color 0.2s ease;
 }
+
+/* FOOTER STYLING */
+.main-footer {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--arcadian-border);
+    text-align: center;
+}
+
+.contact-info {
+    font-size: 0.875rem; 
+    font-weight: 500;
+    color: var(--arcadian-dark);
+    margin-bottom: 0.5rem;
+}
+
+.copyright {
+    font-size: 0.75rem; 
+    color: var(--arcadian-secondary);
+}
 /* ALT SCREEN SIZE COMPATABILITY*/
